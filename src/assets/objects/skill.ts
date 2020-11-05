@@ -1,0 +1,71 @@
+export const skillsObject:object = [
+    [
+        {
+            name:"Python",
+            style:"width:75%",
+            valuenow:"75",
+            valuemin:"0",
+            valuemax:"100"
+        },
+        {
+            name:"Java",
+            style:"width:50%",
+            valuenow:"50",
+            valuemin:"0",
+            valuemax:"100"
+        },
+        {
+            name:"Angular",
+            style:"width:50%",
+            valuenow:"50",
+            valuemin:"0",
+            valuemax:"100"
+        }
+    ],
+    [
+        {
+            name:"Image Processing",
+            style:"width:50%",
+            valuenow:"50",
+            valuemin:"0",
+            valuemax:"100"
+        },
+        {
+            name:"Machine Learning",
+            style:"width:75%",
+            valuenow:"75",
+            valuemin:"0",
+            valuemax:"100"
+        },
+        {
+            name:"Android",
+            style:"width:50%",
+            valuenow:"50",
+            valuemin:"0",
+            valuemax:"100"
+        }
+    ],
+    [
+        {
+            name:"C++",
+            style:"width:25%",
+            valuenow:"25",
+            valuemin:"0",
+            valuemax:"100"
+        },
+        {
+            name:"Salesforce CRM",
+            style:"width:75%",
+            valuenow:"75",
+            valuemin:"0",
+            valuemax:"100"
+        },
+        {
+            name:"Web Development",
+            style:"width:50%",
+            valuenow:"50",
+            valuemin:"0",
+            valuemax:"100"
+        }
+    ]
+]

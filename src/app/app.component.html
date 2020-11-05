@@ -7,22 +7,22 @@
   <title>Personal Website</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
-<body>
+<body data-spy="scroll" data-target="#top-navbar">
   <!--     Navbar Starting    -->
   <div class="container-fullwidth">
-    <nav class="navbar navbar-expand-lg navbar-light bg-none navbar-default fixed-top" style="flex-wrap: wrap;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-none navbar-default fixed-top" style="flex-wrap: wrap;" id="top-navbar">
       <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
         <ul class="nav nav-pills nav-fill">
-          <li class="nav-item active">
-            <a class="nav-link nav-bar-text" href="/">About Me <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-bar-text" href="/blog">Blog</a>
+          <li class="nav-item" *ngFor="let navbarItem of navbarItemsLeft">
+            <a class="nav-link nav-bar-text" href={{navbarItem.link}}>{{navbarItem.title}}</a>
           </li>
         </ul>
       </div>
       <div class="justify-content-end" id="socialMediaMenu">
         <ul class="nav nav-pills nav-fill" id="socialMediaLinks">
+          <li class="nav-item" >
+            <a class="nav-link nav-bar-text" href="/blog">Blog</a>
+          </li>
           <li class="nav-item">
             <a href="https://github.com/yash-patel-98" target="_blank">
               <img src="../assets/images/social-media/GitHub-Mark-64px.png" class="social-media-icons" >
@@ -46,7 +46,7 @@
   </div>
   <!--   Navbar End   -->
   <!--   JumboTron Start   -->
-  <div class="jumbotron jumbotron-fluid text-center">
+  <div class="jumbotron jumbotron-fluid text-center" id="about-me-section">
     <div id="name-div" class="typewriter">
       <h2>Hi, I am Yash Patel.</h2>
     </div>
@@ -64,13 +64,118 @@
     </div>
   </div>
   <!--   JumboTron End  -->
-  <div>
-    <h1>SAMPLE HEADING</h1>
-    <h1>asdasdasdas dasd asda sd asd a<br>asdadasdasd</h1>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+
+
+  <!-- Education Section Start -->
+  <div class="resume-contents">
+    <div id="eduction-section">
+        <h2><img src="../assets/images/resume/education.svg" class="resume-section-image"> Education </h2>  
+    </div>
+    <!-- 2x2 Grid for education contents-->
+    <div class="container" id="education-section-grid">
+      <div class="row">
+        <!-- Left Section Card-->
+        <div class="col">
+          <div class="card" style="width: auto;">
+            <div class="card-body">
+              <img src="../assets/images/manipal-university-jaipur-logo-11-237x300.png" style="height: 128px; float: left; margin-right: 10px;" />
+              <h5 style="float: auto;"> Manipal University Jaipur</h5>
+              <p style="margin-left: 50px;">
+                <b>Duration - </b><em>08/2016 - 05/2020</em>
+                <br/><b>B-Tech in Computer Science and Engineering</b><br/><b>CGPA - 8.95</b>
+                <br/><b>Project :- </b>Gait recognition for human identification using Convolutional Neural Networks  
+              
+              </p>
+            </div>
+        </div>
+        </div>
+        <!-- Right Section Card-->
+      </div>
+    </div>
   </div>
+  <!-- Education Section End -->
+
+  <!-- Work Experience Section Start -->
+  <div class="resume-contents">
+    <div id="work-experience-section">
+        <h2><img src="../assets/images/resume/briefcase.svg" class="resume-section-image"> Experience </h2>  
+    </div>
+    <!-- 2x2 Grid for education contents-->
+    <div class="container" id="education-section-grid">
+      <div class="row" *ngFor="let experience of experiences">
+        <div class="col">
+          <div class="card" style="width: auto;height: 330px">
+            <div class="card-body">
+              <table>
+                <tr>
+                  <th>
+                    <img src={{experience.imgSrc}} style={{experience.styleImg}} />
+                  </th>
+                  <th>
+                    <h5 style={{experience.styleH5}}> {{experience.companyName}}</h5>
+                    <p style={{experience.pStyle}}>
+                      <b>Duration - </b><em>{{experience.duration}}</em><br/>
+                      <b>Role - </b> {{experience.role}}<br/>
+                        <b *ngIf="experience.projectTitle != ''">Project Title - </b> {{experience.projectTitle}} <br/>
+                        <b *ngIf="experience.task != ''">Task - </b>{{experience.task}}
+                        <b *ngIf="experience.url.length != 0">Url - </b>
+                    </p>
+                    <ul *ngIf="experience.url.length != 0" style="margin-left: 50px;">
+                      <li *ngFor="let linker of experience.url">
+                        <a href={{linker.link}}>{{linker.title}}</a>
+                      </li>
+                    </ul>
+                  </th>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>  
+  </div>
+  <!-- Work Experience Section End -->
+
+  <!--Skills Section Start-->
+  <div class="resume-contents">
+    <div id="skills-section">
+        <h2><img src="../assets/images/resume/logical-thinking.svg" class="resume-section-image"> Skills </h2>  
+    </div>
+    <!-- 2x2 Grid for education contents-->
+    <div class="container" id="education-section-grid">
+      <div class="row">
+        <!-- Left Section Card-->
+        <div class="col">
+          <div class="card" style="width: auto;">
+            <div class="card-body">
+              <table style="table-layout: fixed;width:100%">
+                <tr *ngFor="let skillArray of skills">
+                  <th *ngFor="let skill of skillArray">
+                    {{skill.name}}
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-orange" role="progressbar" style={{skill.style}} aria-valuenow={{skill.valuenow}} aria-valuemin={{skill.valuemin}} aria-valuemax={{skill.valuemax}}></div>
+                    </div>
+                  </th>
+                </tr>
+              </table>
+            </div>
+        </div>
+        </div>
+        <!-- Right Section Card-->
+      </div>
+    </div>
+  </div>
+  <!--Skills Section End-->
+  <!-- Certification Section Start -->
+  <div class="resume-contents">
+    <div id="certificates-section">
+        <h2><img src="../assets/images/resume/certificate.svg" class="resume-section-image"> Certifcations </h2>  
+    </div>
+    <!-- 2x2 Grid for education contents-->
+    <app-certificates-section></app-certificates-section>
+    </div>
+  <!-- Certification Section End -->
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+  
 </body>
 </html>
