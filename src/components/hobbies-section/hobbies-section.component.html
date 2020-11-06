@@ -1,0 +1,26 @@
+<div class="container" id="education-section-grid">
+    <div class="row">
+        <!-- Left Section Card-->
+        <div class="col">
+            <div class="card" style="width: auto;">
+                <div class="card-body">
+                    <table style="table-layout: fixed;width:100%; border-spacing: 0 1em; border-collapse: separate;">
+                        <tr *ngFor="let hobbiesArray of hobbies" >
+                            <td *ngFor="let hobby of hobbiesArray">
+                                <tr>
+                                    <td style="padding: 0 16px;">
+                                        <img style="width:48px;" src={{hobby.image}}/>
+                                    </td>
+                                    <td>
+                                        <h5>{{hobby.title}}</h5>
+                                    </td>
+                                </tr> 
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Right Section Card-->
+    </div>
+</div>

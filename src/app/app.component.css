@@ -169,7 +169,7 @@ p{
     text-transform: uppercase;
     white-space: nowrap;
     opacity: 1;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-bottom: 10px;
     animation: pulse 2s linear alternate infinite;
 }

@@ -18,6 +18,14 @@ export const navbarItemsLeft = [
     {
         title:"Certificates",
         link:"#certificates-section"
+    },
+    {
+        title:"Hobbies",
+        link:"#hobbies-section"
+    },
+    {
+        title:"Projects",
+        link:"#projects-section"
     }
 ]
 
