@@ -15,12 +15,25 @@ export class AppComponent {
   skills: object;
   navbarItemsLeft:object;
   navbarItemsRight:object;
+  isScreenSmall:boolean;
   constructor(){
     this.experiences = experiencesObject;
     this.skills = skillsObject;
     this.navbarItemsLeft = navbarItemsLeft;
     this.navbarItemsRight = navbarItemsRight;
+    if (window.innerWidth < 768) {
+      this.isScreenSmall = true;
+    } else {
+      this.isScreenSmall = false;
+    }
     
+  }
+  onResize(event) {
+    if (window.innerWidth < 720) {
+      this.isScreenSmall = true;
+    } else {
+      this.isScreenSmall = false;
+    }
   }
 
 }
