@@ -7,17 +7,17 @@
   <title>Personal Website</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
-<body data-spy="scroll" data-target="#top-navbar" (window:resize)="onResize($event)">
+<body  (window:resize)="onResize($event)">
   <!--     Navbar Starting    -->
   <div class="container-fullwidth">
-    <nav class="navbar navbar-expand-lg navbar-light bg-none  fixed-top" style="flex-wrap: wrap;" id="top-navbar">
-      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-none fixed-top" style="flex-wrap: wrap; background-color: orange;" id="top-navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse " id="navbarNav" >
-        <ul class="nav ">
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="nav navbar-nav">
           <li class="nav-item" *ngFor="let navbarItem of navbarItemsLeft">
-            <a class="nav-link nav-bar-text" href={{navbarItem.link}}>{{navbarItem.title}}</a>
+            <a class="nav-link nav-bar-text" href={{navbarItem.link}}><b>{{navbarItem.title}}</b></a>
           </li>
         </ul>
       </div>
@@ -49,11 +49,11 @@
   </div>
   <!--   Navbar End   -->
   <!--   JumboTron Start   -->
-  <div class="jumbotron jumbotron-fluid text-center container" id="about-me-section">
-    <div id="name-div" class="typewriter">
+  <div class="jumbotron jumbotron-fluid text-center" id="about-me-section">
+    <div id="name-div" class="typewriter container-fullwidth">
       <h2>Hi, I am Yash Patel.</h2>
     </div>
-    <div class="container" id="display-picture-div">
+    <div class="container-fullwidth" id="display-picture-div">
       <img src="../assets/images/ME/IMG_Yash_Suit.jpg " id="personal-display-picture">
     </div>
     <div id="brief-about-me">
@@ -109,7 +109,7 @@
     <div class="container" id="education-section-grid">
       <div class="row cardrow" *ngFor="let experience of experiences">
         <div class="col">
-          <div class="card" style="width: auto;height: 330px">
+          <div class="card justify-content-center" style="width: auto;height: 330px">
             <div class="card-body">
               <div class="container">
                 <div class="row" >
