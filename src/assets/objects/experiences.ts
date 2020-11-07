@@ -38,7 +38,7 @@ export const experiencesObject: object = [
 {
     imgSrc: '../assets/images/resume/soai_logo.jpg',
     styleImg: 'height: 180px; width: 180px;float: left; margin-right: 60px;',
-    styleH5: 'float: auto; margin-top: 10px;margin-left: 20px;',
+    styleH5: 'float: auto; margin-top: 10px;margin-left: 50px;',
     companyName: 'School of AI',
     pStyle: 'margin-left: 50px;',
     duration: '06/2019 - 09/2019',

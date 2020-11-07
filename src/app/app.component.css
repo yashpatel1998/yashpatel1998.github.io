@@ -200,7 +200,7 @@ p{
 ul li a{
     font-size: 18px;
 }
-.row{
+.row.cardrow{
     margin-top: 10px;
     margin-right: 0px;
     margin-left:0px;
@@ -210,4 +210,7 @@ ul li a{
 }
 th{
     padding: 15px;
+}
+.col.skillscol{
+    margin-top: 10px;
 }

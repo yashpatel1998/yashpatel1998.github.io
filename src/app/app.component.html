@@ -10,12 +10,12 @@
 <body data-spy="scroll" data-target="#top-navbar" (window:resize)="onResize($event)">
   <!--     Navbar Starting    -->
   <div class="container-fullwidth">
-    <nav class="navbar navbar-expand-lg navbar-light bg-none navbar-default fixed-top" style="flex-wrap: wrap;" id="top-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-none  fixed-top" style="flex-wrap: wrap;" id="top-navbar">
       <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse " id="navbarNav" >
-        <ul class="nav nav-pills nav-fill">
+        <ul class="nav ">
           <li class="nav-item" *ngFor="let navbarItem of navbarItemsLeft">
             <a class="nav-link nav-bar-text" href={{navbarItem.link}}>{{navbarItem.title}}</a>
           </li>
@@ -49,7 +49,7 @@
   </div>
   <!--   Navbar End   -->
   <!--   JumboTron Start   -->
-  <div class="jumbotron jumbotron-fluid text-center" id="about-me-section">
+  <div class="jumbotron jumbotron-fluid text-center container" id="about-me-section">
     <div id="name-div" class="typewriter">
       <h2>Hi, I am Yash Patel.</h2>
     </div>
@@ -72,13 +72,13 @@
 
 
   <!-- Education Section Start -->
-  <div class="resume-contents">
+  <div class="resume-contents container-fullwidth">
     <div id="eduction-section">
         <h2><img src="../assets/images/resume/education.svg" class="resume-section-image"> Education </h2>  
     </div>
     <!-- 2x2 Grid for education contents-->
     <div class="container" id="education-section-grid">
-      <div class="row">
+      <div class="row cardrow">
         <!-- Left Section Card-->
         <div class="col">
           <div class="card" style="width: auto;">
@@ -101,22 +101,22 @@
   <!-- Education Section End -->
 
   <!-- Work Experience Section Start -->
-  <div class="resume-contents">
+  <div class="resume-contents container-fullwidth">
     <div id="work-experience-section">
         <h2><img src="../assets/images/resume/briefcase.svg" class="resume-section-image"> Experience </h2>  
     </div>
     <!-- 2x2 Grid for education contents-->
     <div class="container" id="education-section-grid">
-      <div class="row" *ngFor="let experience of experiences">
+      <div class="row cardrow" *ngFor="let experience of experiences">
         <div class="col">
           <div class="card" style="width: auto;height: 330px">
             <div class="card-body">
-              <table>
-                <tr>
-                  <th>
+              <div class="container">
+                <div class="row" >
+                  <div class="col col-sm-2">
                     <img src={{experience.imgSrc}} style={{experience.styleImg}} />
-                  </th>
-                  <th>
+                  </div>
+                  <div class="col col-md-10">
                     <h5 style={{experience.styleH5}}> {{experience.companyName}}</h5>
                     <p style={{experience.pStyle}}>
                       <b>Duration - </b><em>{{experience.duration}}</em><br/>
@@ -130,9 +130,9 @@
                         <a href={{linker.link}}>{{linker.title}}</a>
                       </li>
                     </ul>
-                  </th>
-                </tr>
-              </table>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -142,27 +142,27 @@
   <!-- Work Experience Section End -->
 
   <!--Skills Section Start-->
-  <div class="resume-contents">
+  <div class="resume-contents container-fullwidth">
     <div id="skills-section">
         <h2><img src="../assets/images/resume/logical-thinking.svg" class="resume-section-image"> Skills </h2>  
     </div>
     <!-- 2x2 Grid for education contents-->
     <div class="container" id="education-section-grid">
-      <div class="row">
+      <div class="row cardrow">
         <!-- Left Section Card-->
-        <div class="col">
+        <div class="col col-md">
           <div class="card" style="width: auto;">
             <div class="card-body">
-              <table style="table-layout: fixed;width:100%">
-                <tr *ngFor="let skillArray of skills">
-                  <th *ngFor="let skill of skillArray">
-                    {{skill.name}}
+              <div class="container">
+                <div class="row" *ngFor="let skillArray of skills">
+                  <div class="col skillscol col-md" *ngFor="let skill of skillArray">
+                    <b>{{skill.name}}</b>
                     <div class="progress">
                       <div class="progress-bar progress-bar-orange" role="progressbar" style={{skill.style}} aria-valuenow={{skill.valuenow}} aria-valuemin={{skill.valuemin}} aria-valuemax={{skill.valuemax}}></div>
                     </div>
-                  </th>
-                </tr>
-              </table>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
         </div>
