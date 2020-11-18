@@ -4,20 +4,19 @@
         <div class="col">
             <div class="card" style="width: auto;">
                 <div class="card-body">
-                    <table style="table-layout: fixed;width:100%; border-spacing: 0 1em; border-collapse: separate;">
-                        <tr *ngFor="let hobbiesArray of hobbies" >
-                            <td *ngFor="let hobby of hobbiesArray">
-                                <tr>
-                                    <td style="padding: 0 16px;">
+                    
+                        <div class="row" *ngFor="let hobbiesArray of hobbies" >
+                            <div class="col-md" *ngFor="let hobby of hobbiesArray">
+                                <div class="row" style="margin-top: 20px;">
+                                    <div class="col-3" style="padding: 0 16px;">
                                         <img style="width:48px;" src={{hobby.image}}/>
-                                    </td>
-                                    <td>
+                                    </div>
+                                    <div class="col-9">
                                         <h5>{{hobby.title}}</h5>
-                                    </td>
-                                </tr> 
-                            </td>
-                        </tr>
-                    </table>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>

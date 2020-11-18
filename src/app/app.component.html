@@ -78,19 +78,24 @@
     </div>
     <!-- 2x2 Grid for education contents-->
     <div class="container" id="education-section-grid">
-      <div class="row cardrow">
+      <div class="row">
         <!-- Left Section Card-->
         <div class="col">
-          <div class="card" style="width: auto;">
+          <div class="card">
             <div class="card-body">
-              <img src="../assets/images/manipal-university-jaipur-logo-11-237x300.png" style="height: 128px; float: left; margin-right: 10px;" />
-              <h5 style="float: auto;"> Manipal University Jaipur</h5>
-              <p style="margin-left: 50px;">
-                <b>Duration - </b><em>08/2016 - 05/2020</em>
-                <br/><b>B-Tech in Computer Science and Engineering</b><br/><b>CGPA - 8.95</b>
-                <br/><b>Project :- </b>Gait recognition for human identification using Convolutional Neural Networks  
-              
-              </p>
+              <div class="row">
+                <div class="col-md-2 justify-content-center">
+                  <img src="../assets/images/manipal-university-jaipur-logo-11-237x300.png" style="height: 200px; justify-self: center;" />
+                </div>
+                <div class="col-md-10">
+                  <h5 class="card-title"> Manipal University Jaipur</h5>
+                  <p class="card-text">
+                    <b>Duration - </b><em>08/2016 - 05/2020</em>
+                    <br/><b>B-Tech in Computer Science and Engineering</b><br/><b>CGPA - 8.95</b>
+                    <br/><b>Project :- </b>Gait recognition for human identification using Convolutional Neural Networks      
+                  </p>
+                </div>  
+              </div>
             </div>
         </div>
         </div>
@@ -107,18 +112,18 @@
     </div>
     <!-- 2x2 Grid for education contents-->
     <div class="container" id="education-section-grid">
-      <div class="row cardrow" *ngFor="let experience of experiences">
+      <div class="row" *ngFor="let experience of experiences">
         <div class="col">
-          <div class="card justify-content-center" style="width: auto;height: 330px">
+          <div class="card cardrow" style="width: auto;height: auto">
             <div class="card-body">
               <div class="container">
-                <div class="row" >
-                  <div class="col col-sm-2">
+                <div class="row justify-content-center" >
+                  <div class="col-md-3">
                     <img src={{experience.imgSrc}} style={{experience.styleImg}} />
                   </div>
-                  <div class="col col-md-10">
-                    <h5 style={{experience.styleH5}}> {{experience.companyName}}</h5>
-                    <p style={{experience.pStyle}}>
+                  <div class="col-md-9">
+                    <h5 class="card-title" > {{experience.companyName}}</h5>
+                    <p >
                       <b>Duration - </b><em>{{experience.duration}}</em><br/>
                       <b>Role - </b> {{experience.role}}<br/>
                         <b *ngIf="experience.projectTitle != ''">Project Title - </b> {{experience.projectTitle}} <br/>
@@ -148,14 +153,14 @@
     </div>
     <!-- 2x2 Grid for education contents-->
     <div class="container" id="education-section-grid">
-      <div class="row cardrow">
+      <div class="row ">
         <!-- Left Section Card-->
-        <div class="col col-md">
+        <div class=" col-md">
           <div class="card" style="width: auto;">
             <div class="card-body">
               <div class="container">
                 <div class="row" *ngFor="let skillArray of skills">
-                  <div class="col skillscol col-md" *ngFor="let skill of skillArray">
+                  <div class="skillscol col-md" *ngFor="let skill of skillArray">
                     <b>{{skill.name}}</b>
                     <div class="progress">
                       <div class="progress-bar progress-bar-orange" role="progressbar" style={{skill.style}} aria-valuenow={{skill.valuenow}} aria-valuemin={{skill.valuemin}} aria-valuemax={{skill.valuemax}}></div>

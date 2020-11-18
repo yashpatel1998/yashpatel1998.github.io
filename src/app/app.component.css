@@ -204,8 +204,6 @@ ul li a{
 }
 .row.cardrow{
     margin-top: 10px;
-    margin-right: 0px;
-    margin-left:0px;
 }
 .progress-bar-orange {
     background-color: orange !important;
@@ -215,4 +213,8 @@ th{
 }
 .col.skillscol{
     margin-top: 10px;
+}
+.scroll {
+    max-height: auto;
+    overflow-y: auto;
 }

@@ -1,25 +1,26 @@
 <div class="container" id="education-section-grid">
     <div class="row">
         <!-- Left Section Card-->
-        <div class="col">
-            <div class="card" style="width: auto;">
+        <div class="col-md">
+            <div class="card" style="width: auto">
                 <div class="card-body">
-                    <table style="table-layout: fixed;width:100%; border-spacing: 0 1em; border-collapse: separate;">
-                        <tr *ngFor="let certificateArray of certificates" >
-                            <th *ngFor="let certificate of certificateArray">
+                        <div class="row" *ngFor="let certificateArray of certificates">
+                            <div class="col-md" *ngFor="let certificate of certificateArray">
                                 <div class="container">
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="card" style="width: auto;">
+                                    <div class="row" style="margin-top:10px ;">
+                                        <div class="col-md">
+                                            <div class="card" style="width: auto">
                                                 <div class="card-body">
-                                                    <table >
+                                                    <table>
                                                         <tr>
-                                                            <td style="padding: 0 10px;">
-                                                                <img src={{certificate.image}} style="width: 64px;"/>
+                                                            <td style="padding: 0 10px">
+                                                                <img src="{{ certificate.image }}"
+                                                                    style="width: 64px" />
                                                             </td>
                                                             <td>
-                                                                <h5>{{certificate.title}}</h5>
-                                                                <a href={{certificate.link}} target="_blank"> Certificate Link</a>
+                                                                <h5>{{ certificate.title }}</h5>
+                                                                <a href="{{ certificate.link }}" target="_blank">
+                                                                    Certificate Link</a>
                                                             </td>
                                                         </tr>
                                                     </table>
@@ -28,9 +29,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </th>
-                        </tr>
-                    </table>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
