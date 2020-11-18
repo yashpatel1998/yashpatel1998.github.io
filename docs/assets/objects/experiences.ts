@@ -1,7 +1,7 @@
 export const experiencesObject: object = [
 {
     imgSrc: '../assets/images/resume/accenture_logo.png',
-    styleImg: 'height: 180px; width: 180px;float: left; margin-right: 60px;',
+    styleImg: 'height: 180px; margin-right:60px',
     styleH5: 'float: auto; margin-top: 10px;margin-left: 50px;',
     companyName: 'Accenture',
     pStyle: 'margin-left: 50px;',
