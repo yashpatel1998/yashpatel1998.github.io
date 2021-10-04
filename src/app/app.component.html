@@ -10,7 +10,7 @@
 <body  (window:resize)="onResize($event)">
   <!--     Navbar Starting    -->
   <div class="container-fullwidth">
-    <nav class="navbar navbar-expand-lg navbar-light bg-none fixed-top" style="flex-wrap: wrap; background-color: #005282;" id="top-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-none fixed-top" style="flex-wrap: wrap; background-color: #4a8db4;" id="top-navbar">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -42,9 +42,9 @@
           </li>
         </ul>
       </div>
-      <div class="progress">
+      <!--<div class="progress">
         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-      </div>
+      </div>-->
     </nav>
   </div>
   <!--   Navbar End   -->
@@ -111,7 +111,7 @@
         <h2><img src="../assets/images/resume/briefcase.svg" class="resume-section-image"> Experience </h2>  
     </div>
     <!-- 2x2 Grid for education contents-->
-    <div class="container" id="education-section-grid">
+    <div class="container flex-container" id="education-section-grid">
       <div class="row" *ngFor="let experience of experiences" style="margin-top:10px">
         <div class="col">
           <div class="card cardrow" style="width: auto;height: auto">
