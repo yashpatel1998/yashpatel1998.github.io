@@ -8,6 +8,7 @@ import { HobbiesSectionComponent } from '../components/hobbies-section/hobbies-s
 import { AppRoutingModule } from './app-routing.module';
 import { SkillsSectionComponent } from '../components/skills-section/skills-section.component';
 import { WorkSectionComponent } from '../components/work-section/work-section.component';
+import { EducationSectionComponent } from '../components/education-section/education-section.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { WorkSectionComponent } from '../components/work-section/work-section.co
     HobbiesSectionComponent,
     SkillsSectionComponent,
     WorkSectionComponent,
+    EducationSectionComponent,
   ],
   imports: [
     BrowserModule,
