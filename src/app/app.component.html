@@ -110,40 +110,9 @@
     <div id="work-experience-section">
         <h2><img src="../assets/images/resume/briefcase.svg" class="resume-section-image"> Experience </h2>  
     </div>
-    <!-- 2x2 Grid for education contents-->
-    <div class="container flex-container" id="education-section-grid">
-      <div class="row" *ngFor="let experience of experiences" style="margin-top:10px">
-        <div class="col">
-          <div class="card cardrow" style="width: auto;height: auto">
-            <div class="card-body">
-              <div class="container">
-                <div class="row justify-content-center" >
-                  <div class="col-md-3">
-                    <img src={{experience.imgSrc}} style={{experience.styleImg}} />
-                  </div>
-                  <div class="col-md-9">
-                    <h5 class="card-title" > {{experience.companyName}}</h5>
-                    <p >
-                      <b>Duration - </b><em>{{experience.duration}}</em><br/>
-                      <b>Role - </b> {{experience.role}}<br/>
-                        <b *ngIf="experience.projectTitle != ''">Project Title - </b> {{experience.projectTitle}} <br/>
-                        <b *ngIf="experience.task != ''">Task - </b>{{experience.task}}
-                        <b *ngIf="experience.url.length != 0">Url - </b>
-                    </p>
-                    <ul *ngIf="experience.url.length != 0" style="margin-left: 50px;">
-                      <li *ngFor="let linker of experience.url">
-                        <a href={{linker.link}}>{{linker.title}}</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
+    <app-work-section></app-work-section>
   </div>  
-  </div>
+
   <!-- Work Experience Section End -->
 
   <!--Skills Section Start-->
@@ -152,28 +121,7 @@
         <h2><img src="../assets/images/resume/logical-thinking.svg" class="resume-section-image"> Skills </h2>  
     </div>
     <!-- 2x2 Grid for education contents-->
-    <div class="container" id="education-section-grid">
-      <div class="row ">
-        <!-- Left Section Card-->
-        <div class=" col-md">
-          <div class="card" style="width: auto;">
-            <div class="card-body">
-              <div class="container">
-                <div class="row" *ngFor="let skillArray of skills">
-                  <div class="skillscol col-md" *ngFor="let skill of skillArray">
-                    <b>{{skill.name}}</b>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-orange" role="progressbar" style={{skill.style}} aria-valuenow={{skill.valuenow}} aria-valuemin={{skill.valuemin}} aria-valuemax={{skill.valuemax}}></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-        </div>
-        <!-- Right Section Card-->
-      </div>
-    </div>
+    <app-skills-section></app-skills-section>
   </div>
   <!--Skills Section End-->
   <!-- Certification Section Start -->
