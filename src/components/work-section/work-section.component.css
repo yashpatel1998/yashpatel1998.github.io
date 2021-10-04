@@ -1,0 +1,18 @@
+#work-section-grid{
+    margin-top: 20px;
+}
+
+.company-logo{
+    max-width: 20vw;
+    max-height: 20vh;
+    margin:auto
+}
+
+.company-logo-div{
+    display: flex;
+    justify-content: center;
+}
+.work-experience-details-div{
+    padding:1%;
+    overflow-wrap: break-word;
+}
