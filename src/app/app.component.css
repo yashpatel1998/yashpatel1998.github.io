@@ -214,9 +214,7 @@ ul li a{
 th{
     padding: 15px;
 }
-.col.skillscol{
-    margin-top: 10px;
-}
+
 .scroll {
     max-height: auto;
     overflow-y: auto;
