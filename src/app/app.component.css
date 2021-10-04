@@ -13,7 +13,7 @@ body{
     overflow-x: hidden;
 }
 .nav-pills > li.active > a{
-    color: orange;
+    color: #005282;
 }
 
 /* Let's get this party started */
@@ -32,12 +32,12 @@ body{
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background:orange; 
+    background:#005282; 
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
     
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-    background: orange; 
+    background: #005282; 
     border: solid 3px transparent;
 }
 
@@ -70,7 +70,7 @@ body{
 .typewriter h2 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
+    border-right: .15em solid #005282; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
@@ -86,7 +86,7 @@ body{
   /* The typewriter cursor effect */
 @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: orange; }
+    50% { border-color: #005282; }
 }
 #display-picture-div{
     margin-top: 32px;
@@ -131,7 +131,7 @@ p{
     height: 100%;
     width: 51%;
     /* background: #2c3e50; */
-    background: orange;
+    background: #005282;
 }
 
 .chevron:before {
@@ -143,7 +143,7 @@ p{
     right: 0;
     width: 50%;
     transform: skew(0deg, -30deg);
-    background: orange;
+    background: #005282;
 }
 
 @keyframes move {
@@ -205,8 +205,8 @@ ul li a{
 .row.cardrow{
     margin-top: 10px;
 }
-.progress-bar-orange {
-    background-color: orange !important;
+.progress-bar-#005282 {
+    background-color: #005282 !important;
 }
 th{
     padding: 15px;
