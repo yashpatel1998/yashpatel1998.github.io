@@ -1,0 +1,12 @@
+.certificate-card-div{
+    display: flex;
+    justify-content: center;
+}
+h5 a{
+    overflow-wrap: break-word;
+}
+@media all and (max-device-width: 480px) {
+    .certificate-icon {
+        display:none;
+    }
+}

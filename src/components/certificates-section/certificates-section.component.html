@@ -1,21 +1,20 @@
-<div class="container" id="education-section-grid">
+<div class="container flex-container" id="certificates-section-grid">
     <div class="row">
         <!-- Left Section Card-->
         <div class="col-md">
             <div class="card" style="width: auto">
                 <div class="card-body">
-                        <div class="row" *ngFor="let certificateArray of certificates">
+                        <div class="row certificate-card-div" *ngFor="let certificateArray of certificates">
                             <div class="col-md" *ngFor="let certificate of certificateArray">
                                 <div class="container">
-                                    <div class="row" style="margin-top:10px ;">
+                                    <div class="row justify-content-center flex-container" style="margin-top:10px ;">
                                         <div class="col-md">
-                                            <div class="card" style="width: auto">
+                                            <div class="card certificate-card-div" style="width: auto">
                                                 <div class="card-body">
                                                     <table>
                                                         <tr>
-                                                            <td style="padding: 0 10px">
-                                                                <img src="{{ certificate.image }}"
-                                                                    style="width: 64px" />
+                                                            <td >
+                                                                <img src="{{ certificate.image }}" alt="" class="certificate-icon"  style="width: 70%;">
                                                             </td>
                                                             <td>
                                                                 <h5>{{ certificate.title }}</h5>
