@@ -1,0 +1,33 @@
+<!-- 2x2 Grid for education contents-->
+<div class="container flex-container" id="work-section-grid">
+    <div class="row" *ngFor="let experience of experiences" style="margin-top:10px">
+        <div class="col">
+            <div class="card cardrow" style="width: auto;height: auto">
+                <div class="card-body">
+                    <div class="container">
+                        <div class="row justify-content-center flex-container">
+                            <div class="col-md-2 company-logo-div">
+                                <img src={{experience.imgSrc}} class="company-logo" />
+                            </div>
+                            <div class="col-md-10 work-experience-details-div">
+                                <h5 class="card-title"> {{experience.companyName}}</h5>
+                                <p>
+                                    <b>Duration - </b><em>{{experience.duration}}</em><br />
+                                    <b>Role - </b> {{experience.role}}<br />
+                                    <b *ngIf="experience.projectTitle != ''">Project Title - </b>
+                                    {{experience.projectTitle}} <br />
+                                    <b *ngIf="experience.task != ''">Task - </b>{{experience.task}}
+                                    <b *ngIf="experience.url.length != 0">Url - </b>
+                                </p>
+                                <ul *ngIf="experience.url.length != 0" style="margin-left: 50px;">
+                                    <li *ngFor="let linker of experience.url">
+                                        <a href={{linker.link}}>{{linker.title}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

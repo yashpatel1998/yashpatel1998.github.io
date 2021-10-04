@@ -6,12 +6,16 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CertificatesSectionComponent } from '../components/certificates-section/certificates-section.component';
 import { HobbiesSectionComponent } from '../components/hobbies-section/hobbies-section.component';
 import { AppRoutingModule } from './app-routing.module';
+import { SkillsSectionComponent } from '../components/skills-section/skills-section.component';
+import { WorkSectionComponent } from '../components/work-section/work-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CertificatesSectionComponent,
-    HobbiesSectionComponent
+    HobbiesSectionComponent,
+    SkillsSectionComponent,
+    WorkSectionComponent,
   ],
   imports: [
     BrowserModule,

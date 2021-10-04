@@ -1,0 +1,24 @@
+<div class="container" id="education-section-grid">
+    <div class="row ">
+        <!-- Left Section Card-->
+        <div class=" col-md">
+            <div class="card" style="width: auto;">
+                <div class="card-body">
+                    <div class="container">
+                        <div class="row" *ngFor="let skillArray of skills">
+                            <div class="skillscol col-md" *ngFor="let skill of skillArray">
+                                <b>{{skill.name}}</b>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-orange" role="progressbar"
+                                        style={{skill.style}} aria-valuenow={{skill.valuenow}}
+                                        aria-valuemin={{skill.valuemin}} aria-valuemax={{skill.valuemax}}></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Right Section Card-->
+    </div>
+</div>
