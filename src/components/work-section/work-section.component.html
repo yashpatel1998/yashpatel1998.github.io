@@ -15,7 +15,7 @@
                                     <b>Duration - </b><em>{{experience.duration}}</em><br />
                                     <b>Role - </b> {{experience.role}}<br />
                                     <b *ngIf="experience.projectTitle != ''">Project Title - </b>
-                                    {{experience.projectTitle}} <br />
+                                    {{experience.projectTitle}} <br *ngIf="experience.projectTitle != ''"/>
                                     <b *ngIf="experience.task != ''">Task - </b>{{experience.task}}
                                     <b *ngIf="experience.url.length != 0">Url - </b>
                                 </p>
