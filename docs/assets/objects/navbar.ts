@@ -32,7 +32,7 @@ export const navbarItemsLeft = [
 export const navbarItemsRight = [
     {
         title:"",
-        link:"https://github.com/yash-patel-98",
+        link:"https://github.com/yashpatel1998",
         image:"../assets/images/social-media/GitHub-Mark-64px.png",
         target:"_blank"
     },
