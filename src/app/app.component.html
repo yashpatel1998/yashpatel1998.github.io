@@ -17,7 +17,7 @@
       <div class="collapse navbar-collapse " id="navbarNav">
         <ul class="nav navbar-nav">
           <li class="nav-item" *ngFor="let navbarItem of navbarItemsLeft">
-            <a class="nav-link nav-bar-text" href={{navbarItem.link}}><b>{{navbarItem.title}}</b></a>
+            <a class="nav-link nav-bar-text" href={{navbarItem.link}} ><b>{{navbarItem.title}}</b></a>
           </li>
         </ul>
       </div>
@@ -77,34 +77,11 @@
         <h2><img src="../assets/images/resume/education.svg" class="resume-section-image"> Education </h2>  
     </div>
     <!-- 2x2 Grid for education contents-->
-    <div class="container" id="education-section-grid">
-      <div class="row">
-        <!-- Left Section Card-->
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-md-2 justify-content-center">
-                  <img src="../assets/images/manipal-university-jaipur-logo-11-237x300.png" style="height: 200px; justify-self: center;" />
-                </div>
-                <div class="col-md-10">
-                  <h5 class="card-title"> Manipal University Jaipur</h5>
-                  <p class="card-text">
-                    <b>Duration - </b><em>08/2016 - 05/2020</em>
-                    <br/><b>B-Tech in Computer Science and Engineering</b><br/><b>CGPA - 8.95</b>
-                    <br/><b>Project :- </b>Gait recognition for human identification using Convolutional Neural Networks      
-                  </p>
-                </div>  
-              </div>
-            </div>
-        </div>
-        </div>
-        <!-- Right Section Card-->
-      </div>
-    </div>
+    <app-education-section></app-education-section>
+    
   </div>
   <!-- Education Section End -->
-
+  <hr>
   <!-- Work Experience Section Start -->
   <div class="resume-contents container-fullwidth">
     <div id="work-experience-section">
@@ -112,7 +89,7 @@
     </div>
     <app-work-section></app-work-section>
   </div>  
-
+  <hr>
   <!-- Work Experience Section End -->
 
   <!--Skills Section Start-->
@@ -123,6 +100,7 @@
     <!-- 2x2 Grid for education contents-->
     <app-skills-section></app-skills-section>
   </div>
+  <hr>
   <!--Skills Section End-->
   <!-- Certification Section Start -->
   <div class="resume-contents">
@@ -132,6 +110,7 @@
     <!-- 2x2 Grid for education contents-->
     <app-certificates-section></app-certificates-section>
   </div>
+  <hr>
   <!-- Certification Section End -->
   <div class="resume-contents">
     <div id="hobbies-section">
@@ -140,6 +119,7 @@
     <!-- 2x2 Grid for education contents-->
     <app-hobbies-section></app-hobbies-section>
   </div>
+  <hr>
   <div class="resume-contents">
     <div id="projects-section">
         <h2><img src="../assets/images/resume/projects.svg" class="resume-section-image"> Projects </h2>  

@@ -28,6 +28,12 @@ export class AppComponent {
       this.isScreenSmall = false;
     }
   }
-
+  navItemClick(event){
+    
+    // if(event.target.innerHTML === 'About Me'){
+    //   console.log(event.target.innerHTML );
+    //   window.scrollTo(0,0);
+    // }
+  }
 ngOnInit(): void {};
 }

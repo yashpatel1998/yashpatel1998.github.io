@@ -1,7 +1,7 @@
 export const navbarItemsLeft = [
     {
         title:"About Me",
-        link:"/"
+        link:"#about-me-section"
     },
     {
         title:"Education",

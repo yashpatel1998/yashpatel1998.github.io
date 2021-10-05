@@ -1,0 +1,27 @@
+<div class="container" id="education-section-grid">
+    <div class="row" *ngFor="let education of educations" style="margin-top:10px">
+        <!-- Left Section Card-->
+        <div class="col">
+            <div class="card cardrow" style="width: auto;height: auto">
+                <div class="card-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-2 justify-content-center education-logo-div">
+                                <img src={{education.imgSrc}} class="education-logo"/>
+                            </div>
+                            <div class="col-md-10 education-details-div">
+                                <h5 class="card-title">{{education.collegeName}}</h5>
+                                <p class="card-text">
+                                    <b>Duration - </b><em>{{education.duration}}</em><br />
+                                    <b>Course Details - </b><em>{{education.courseDetails}}</em><br/>
+                                    <b>CGPA - </b><em>{{education.cgpa}}</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Right Section Card-->
+    </div>
+</div>

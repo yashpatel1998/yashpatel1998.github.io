@@ -1,0 +1,8 @@
+.skillscol{
+    margin-top: 10px;
+}
+#skills-section-grid{
+    /* display:flex; */
+    justify-content: center;
+    width: 100%;
+}

@@ -1,0 +1,18 @@
+#work-section-grid{
+    margin-top: 20px;
+}
+
+.education-logo{
+    max-width: 20vw;
+    max-height: 20vh;
+    margin:auto
+}
+
+.education-logo-div{
+    display: flex;
+    justify-content: center;
+}
+.education-details-div{
+    padding:1%;
+    overflow-wrap: break-word;
+}
